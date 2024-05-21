@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>J A R V I S</title>
+		<link rel="stylesheet" href="./style.css">
+		<link rel="icon" href="images/mic.png">
+	</head>
+	<body>
+
+		<audio src="./turnOn.wav" id="turn_on"></audio>
+
+		<div class="machine">
+		
+			<div class="clock cont">
+				<i class="fa-regular fa-clock icon"></i>
+				<p id="time"></p>
+			</div>
+
+			<div class="internet cont">
+				<i class="fa-solid fa-wifi icon"></i>
+				<p id="internet"></p>
+			</div>
+
+			<div class="battery cont">
+				<i class="fa-solid icon bicon"></i>
+				<p id="battery"></p>
+			</div>
+
+			<div class="temp">
+				<p id="location"></p>
+				<p id="country"></p>
+				<p id="weatherT"></p>
+				<p id="weatherD"></p>
+				<img src="" id="weatherIcon">
+				<p id="oTemp"></p>
+				<p id="feelLikeTemp"></p>
+				<p id="minT"></p>
+				<p id="maxT"></p>
+			</div>
+
+			<div class="calendar">
+				<p id="month"></p>
+				<p id="day"></p>
+				<p id="date"></p>
+				<p id="year"></p>
+			</div>
+			
+			<img src="images/voice.gif" id="voice1">
+			<img src="images/voice.gif" id="voice2">
+		</div>
+
+		<div title="start JARVIS">
+			<img src="images/start-btn.gif" id="start_jarvis_btn" width="150px" alt="start_jarvis">
+		</div>
+		<div title="stop JARVIS">
+			<img src="images/start-btn.gif" id="stop_jarvis_btn" width="150px" alt="stop_jarvis">
+		</div>
+
+		<div class="jarvis_setup in_middle">
+			<table>
+				<tr>
+					<td><label for="">Name</label></td>
+					<td><input type="text"></td>
+				</tr>
+				<tr>
+					<td><label for="">Bio</label></td>
+					<td><input type="text"></td>
+				</tr>
+				<tr>
+					<td><label for="">City location</label></td>
+					<td><input type="text"></td>
+				</tr>
+				<tr>
+					<td><label for="">Phone No.</label></td>
+					<td><input type="text"></td>
+				</tr>
+				<tr>
+					<td><label for="">Occupation</label></td>
+					<td><input type="text"></td>
+				</tr>
+			</table>
+			<button id="sub-btn">Submit</button>
+		</div>
+
+		<div class="messages in_middle"></div>
+		<div class="commands in_middle">
+			<p>*** Double hashtags (# #) indicate commands that can also be followed by the Burmese version ***</p> <br>
+		</div>
+		<div class="voices in_middle">
+			<p>
+				Voice 1. David<br>
+				Voice 2. Mark<br>
+				Voice 3. Zira<br>
+			</p>
+		</div>
+
+		<script src="./app.js"></script>
+		<script src="https://kit.fontawesome.com/2b40276415.js" crossorigin="anonymous"></script>
+		<noscript>you need Javascript for this webapp</noscript>
+	</body>
+</html>
